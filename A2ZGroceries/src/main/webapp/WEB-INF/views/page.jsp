@@ -38,6 +38,15 @@
 	<c:if test="${userClickedHome == true }">
 		<%@include file="home.jsp" %>
 	</c:if>
+	<!-- only when user clicks about -->
+	<c:if test="${userClickedAbout == true }">
+		<%@include file="about.jsp" %>
+	</c:if>
+	
+	<!-- only when user clicks contact -->
+	<c:if test="${userClickedContact == true }">
+		<%@include file="contact.jsp" %>
+	</c:if>
 	
     <!-- Footer -->
 	<%@include file="./shared/footer.jsp" %>
